@@ -1,5 +1,5 @@
 from controle.aluno import aluno
 
-if __init__ == "__main__":
+if __name__ == "__main__":
     controle = aluno()
     controle.salvando_aluno()

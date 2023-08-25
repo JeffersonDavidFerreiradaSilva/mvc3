@@ -14,6 +14,6 @@ class aluno_model():
       
     def salvar_aluno(self,nome,idade,peso):
         self.cursor = self.conexao.cursor()
-        self.cursor.execute("INSERT INTO tb_aluno (nome,idade,peso) VALUES (%s,%s,%s)",(nome,idade,peso)) 
+        self.cursor.execute("INSERT INTO tb_alunos (nome,idade,peso) VALUES (%s,%s,%s)",(nome,idade,peso)) 
         self.conexao.commit()
         self.cursor.close()         
